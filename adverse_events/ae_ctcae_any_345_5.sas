@@ -194,8 +194,9 @@ run;
 *==================================================;
 
 
-proc sort data=counts out=dummy(keep=asoc adecod label) nodupkey;
-   by asoc adecod label;
+
+proc sort data=counts out=dummy(keep=asoc adecod label termsex) nodupkey;
+   by asoc adecod label termsex;
 run;
 
 data dummy;
@@ -210,16 +211,16 @@ data dummy;
 run;
 
 proc sort data=counts out=countsx ;
-   by asoc adecod label atoxgrn trtan;
+   by asoc adecod label atoxgrn trtan termsex;
 run;
 
 proc sort data=countsx;
-   by asoc adecod label atoxgrn trtan;
+   by asoc adecod label atoxgrn trtan termsex;
 run;
 
 data counts;
    merge dummy(in=a) countsx(in=b);
-   by asoc adecod label atoxgrn trtan;
+   by asoc adecod label atoxgrn trtan termsex;
 run;
 
 *========================================================;
@@ -242,12 +243,15 @@ run;
 data counts;
    set counts;
    length cp $ 20;
-   /*if termsex="M" then 
+   if termsex="M" then 
    do;cp=put(count,3.)|| " ("||put((count/malecount)*100,5.1)||")"; label=trim(label)||"*a"; end;
    if termsex="F" then 
    do; cp=put(count,3.)|| " ("||put((count/femalecount)*100,5.1)||")";label=trim(label)||"*b"; end;
-   if missing(termsex) then*/ cp=put(count,3.)|| " ("||put((count/trtcount)*100,5.1)||")";
+   if missing(termsex) then cp=put(count,3.)|| " ("||put((count/trtcount)*100,5.1)||")";
+
+   if count=0 then cp=put(count,3.);
 run;
+
 
 proc sort data=counts;
    by asoc adecod label atoxgrn;
