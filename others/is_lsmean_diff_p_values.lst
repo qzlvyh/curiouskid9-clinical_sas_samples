@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                       Treatment Difference          
+                                                                                                     (Active___ vs Placebo)[b]       
+                                                                             LS Mean          ---------------------------------------
+Treatment                   Time Point [a]   n     Mean      SD     Median  Change [b]  SE    LS Mean  SE       95% CI        p-value
+-------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                     
+Placebo (N=XXX)                Baseline     XXX    XX.XX    X.XXX    XX.XX                                                           
+                                Week XX     XXX    XX.XX    X.XXX    XX.XX     -X.XX   X.XXX                                         
+                                Week XX      XX    XX.XX    X.XXX    XX.XX     -X.XX   X.XXX                                         
+                                Week XX     XXX    XX.XX    X.XXX    XX.XX     -X.XX   X.XXX                                         
+                                                                                                                                     
+Active___ X.Xmg/kg (N=XXX)     Baseline     XXX    XX.XX    X.XXX    XX.XX                                                           
+                                Week XX      XX    XX.XX    X.XXX    XX.XX     -X.XX   X.XXX   -X.XX  X.XXX   (-X.XX, X.XX)    X.XXX 
+                                Week XX      XX    XX.XX    X.XXX    XX.XX     -X.XX   X.XXX    X.XX  X.XXX   (-X.XX, X.XX)    X.XXX 
+                                Week XX      XX    XX.XX    X.XXX    XX.XX     -X.XX   X.XXX    X.XX  X.XXX   (-X.XX, X.XX)    X.XXX 
+                                                                                                                                     
+Active___ X.Xmg/kg (N=XXX)     Baseline     XXX    XX.XX    X.XXX    XX.XX                                                           
+                                Week XX     XXX    XX.XX    X.XXX    XX.XX     -X.XX   X.XXX    X.XX  X.XXX   (-X.XX, X.XX)    X.XXX 
+                                Week XX      XX    XX.XX    X.XXX    XX.XX     -X.XX   X.XXX    X.XX  X.XXX   (-X.XX, X.XX)    X.XXX 
+                                Week XX     XXX    XX.XX    X.XXX    XX.XX     -X.XX   X.XXX    X.XX  X.XXX   (-X.XX, X.XX)    X.XXX 
+                                                                                                                                     
+                                                                                                                                    
+-------------------------------------------------------------------------------------------------------------------------------------
